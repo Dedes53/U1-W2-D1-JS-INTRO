@@ -1,0 +1,89 @@
+/*
+REGOLE
+- Tutte le risposte devono essere scritte in JavaScript
+- Puoi usare Google / StackOverflow ma solo quanto ritieni di aver bisogno di qualcosa che non è stato spiegato a lezione
+- Puoi testare il tuo codice in un file separato, o de-commentando un esercizio alla volta
+- Per visualizzare l'output, lancia il file HTML a cui è collegato e apri la console dagli strumenti di sviluppo del browser. 
+- Utilizza dei console.log() per testare le tue variabili e/o i risultati delle espressioni che stai creando.
+*/
+
+/* ESERCIZIO 1
+ Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
+*/
+/*
+I principali datatype in JavaScript sono number, string, boolean, undefined e null. 
+
+- Una variabile di tipo NUMBER è utilizzata per salvare numeri, sia interi che decimali. Es: let number = 5;
+- una variabile di tipo STRING è utilizzata per salvare del testo, racchiuso tra apici (sia singoli che doppi). Es: let name = "Federico";
+- una variabile di tipo BOOLEAN può avere solo due valori: TRUE o FALSE. Tipicamente è utilizzata per verrificare condizioni e definire comportamenti in base al risultato. Es: let esFinito = false;
+- una variabile di tipo UNDEFINED rappresenta il valore di una variabile dichiarata, ma non ancora inizializzata. Es: let name; console.log(name): => restituisce come valore undefined.
+- una variabile di tipo NULL invece rappresenta l'assenza del valore. Es: let x = null;
+
+
+Poi ci sono gli oggetti, array e funzioni.
+
+- un OGGETTO è un insieme di più dati formato da coppie chiave-valore. Es: let utente = { name: "Federico", cognome: "Lepore", età: "28", ecc... };
+- un ARRAY è invece una lista oprdinata di valori, ad ogni valore è associata una posizione. Es: let classe = ["Federico", "Simone", ecc]; in questo caso il dato di valore "Federico" occupa la posizione 0 dell'array classe, "Simone" la posizione 1.
+- una FUNZIONE è un blocco di codice riutilizzabile, che può essere richiamato, può ricevere input e restitutire un valore. Può anche essere assegnata a variabili.
+Es: function sum(a, b){
+      return a + b;}
+    
+    let result = sum(3, 4);
+*/
+/* ESERCIZIO 2
+ Crea una variable chiamata "myName" e assegna ad essa il tuo nome, sotto forma di stringa.
+*/
+let myName = "Federico";
+console.log(myName);
+
+/* ESERCIZIO 3
+ Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
+*/
+let sum = 12 + 20;
+console.log(sum);
+
+let numA = 12;
+let numB = 20;
+let sumAB = numA + numB;
+console.log(sumAB);
+console.log(numA + numB);
+
+console.log(12 + 20);
+
+/* ESERCIZIO 4
+ Crea una variable di nome "x" e assegna ad essa il numero 12.
+*/
+let x = 12;
+console.log(x);
+
+let x2;
+x2 = 12;
+console.log(x2);
+
+/* ESERCIZIO 5
+  Riassegna un nuovo valore alla variabile "myName" già esistente: il tuo cognome.
+  Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
+*/
+myName = "Lepore";
+console.log(myName);
+
+const surname = "Lepore";
+// surname = "Federico";
+console.log(surname);
+
+/* ESERCIZIO 6
+ Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
+*/
+let y = 4;
+console.log(x - y);
+
+/* ESERCIZIO 7
+ Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
+ Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
+ EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
+*/
+let name1 = "john";
+let name2 = "John";
+
+console.log(name1 !== name2);
+console.log(name1 === name2.toLowerCase());
